@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1 class="form-title">Apply to Live at Ambitious Coliving</h1>
+        <p class="form-description">
+          Tell us a bit about yourself so we can find the best fit for you.
+        </p>
+        <hr />
+        <div class="form-section1">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="E.g. John Doe"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E.g. john@example.com"
+            required
+          />
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="E.g. +1 234 567 8900"
+          />
+        </div>
+        <h2 class="form-question">When are you planning to move?</h2>
+        <div class="form-section2">
+          <label for="immediately">Immediately</label>
+          <input
+            type="radio"
+            id="immediately"
+            name="moving-date"
+            value="immediately"
+          />
+          <label for="within-1-month">Within 1 month</label>
+          <input
+            type="radio"
+            id="within-1-month"
+            name="moving-date"
+            value="within-1-month"
+          />
+          <label for="just-exploring">Just exploring</label>
+          <input
+            type="radio"
+            id="just-exploring"
+            name="moving-date"
+            value="just-exploring"
+          />
+        </div>
+        <h2 class="form-question">How long do you plan to stay?</h2>
+        <div class="form-section3">
+          <label for="1-3-months">1-3 months</label>
+          <input
+            type="radio"
+            id="1-3-months"
+            name="stay-duration"
+            value="1-3-months"
+          />
+          <label for="3-6-months">3-6 months</label>
+          <input
+            type="radio"
+            id="3-6-months"
+            name="stay-duration"
+            value="3-6-months"
+          />
+          <label for="6+months">6+ months</label>
+          <input
+            type="radio"
+            id="6+months"
+            name="stay-duration"
+            value="6+months"
+          />
+        </div>
+        <h2 class="form-question">What type of room are you looking for?</h2>
+        <div class="form-section4">
+          <label for="private">Double Room</label>
+          <input
+            type="radio"
+            id="private"
+            name="room-preference"
+            value="private"
+          />
+          <label for="shared">Triple Room</label>
+          <input
+            type="radio"
+            id="shared"
+            name="room-preference"
+            value="shared"
+          />
+          <label for="no-preference">Quadruple Room</label>
+          <input
+            type="radio"
+            id="no-preference"
+            name="room-preference"
+            value="no-preference"
+          />
+        </div>
+        <h2 class="area-question">What’s your daily routine like?</h2>
+        <div class="form-section5">
+          <textarea
+            id="daily-routine"
+            name="daily-routine"
+            placeholder="E.g. I work from 9am to 5pm, enjoy cooking in the evenings, and like to socialize on weekends."
+            required
+          ></textarea>
+        </div>
+        <h2 class="area-question">What do you do for work or study?</h2>
+        <div class="form-section6">
+          <textarea
+            id="work-study"
+            name="work-study"
+            placeholder="E.g. I’m a Uber driver, and I'm also studying English."
+            required
+          ></textarea>
+        </div>
+        <p class="form-cta">
+          We review every application carefully. If it's a good fit, we’ll reach
+          out within 48 hours.
+        </p>
+        <button type="submit" class="submit-button">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
