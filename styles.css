@@ -167,9 +167,17 @@ textarea:focus {
   box-shadow: none;
 }
 
-media@query (max-width: 600px) {
-  .form-section2 {
+@media (max-width: 600px) {
+  .form-section2,
+  .form-section3,
+  .form-section4 {
     grid-template-columns: 1fr;
-    align-items: center;
+  }
+
+  .form-section2 label,
+  .form-section3 label,
+  .form-section4 label {
+    justify-content: space-between;
+    width: 100%;
   }
 }
