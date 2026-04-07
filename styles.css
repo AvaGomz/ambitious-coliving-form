@@ -168,8 +168,12 @@ textarea:focus {
 }
 
 @media (max-width: 600px) {
-  .form-section2 {
-    grid-template-columns: 1fr;
-    justify-items: center;
+  .form-section2,
+  .form-section3,
+  .form-section4 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
